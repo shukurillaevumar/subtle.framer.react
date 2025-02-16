@@ -5,6 +5,9 @@
 }
 
 .menu-container {
+  position: sticky;
+  top: 10px;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0.5rem;
   background-color: #383838;
   border: 1px solid #2b2b2b;
@@ -618,6 +621,14 @@ a {
     box-sizing: border-box;
   }
 
+  .intro-box .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .available-box {
     display: none;
   }
@@ -627,23 +638,26 @@ a {
   }
 
   .navigation-panel {
-    gap: 1.2rem;
-  }
-
-  .theme-panel {
     gap: 1rem;
   }
 
-  .intro-p-small {
+  .theme-panel {
+    gap: 0.5rem;
+  }
+
+  .intro-p-small,
+  .intro-p-big {
     text-align: center;
   }
 
   .menu-btn {
-    width: 7rem;
+    width: auto;
+    font-size: 15px;
   }
 
   .footer-p-big {
     line-height: normal;
+    font-size: 28px;
   }
 
   .projects-box-info-p-small {
@@ -658,6 +672,12 @@ a {
     gap: 0.5rem;
   }
 
+  .f-icons i {
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+  }
+
   .green-dot-hidden {
     display: block;
   }
@@ -665,5 +685,25 @@ a {
   .products-box-p-small {
     font-size: 12px;
     text-align: center;
+  }
+
+  .follow-div p {
+    font-size: 18px;
+    gap: 0.5rem;
+  }
+
+  .bot-f p {
+    font-size: 15px;
+  }
+
+  .footer-p-small {
+    font-size: 16px;
+  }
+
+  .aboutMe-title {
+    font-size: 26px;
+  }
+  .aboutMe-subtitle {
+    font-size: 16px;
   }
 }
